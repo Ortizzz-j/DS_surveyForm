@@ -5,45 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devslopes Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
+    <div id="heading">
         <h1>Devslopes Survey Form</h1>
         <i>Thank you for taking the time to help us improve the platform</i>
     </div>
     <form action="#" method="post">
         <div>
             <label for="name">Name</label><br>
-            <input id="name" name="name" type="text" placeholder="Enter your name"><br>
+            <input class="fullLength" id="name" name="name" type="text" placeholder="Enter your name"><br>
             <label for="email">Email</label><br>
-            <input id="email" name="email" type="text" placeholder="Enter your email"><br>
+            <input class="fullLength"  id="email" name="email" type="text" placeholder="Enter your email"><br>
             <label for="age">Age</label><br>
-            <input id="age" name="age" type="text" placeholder="Age"><br>
+            <input class="fullLength"  id="age" name="age" type="text" placeholder="Age"><br>
             <label for="role">Which option best describes your current role?</label><br>
-            <select name="role" id="role">
+            <select class="fullLength"  name="role" id="role">
                 <option value="none">Select an option</option>
                 <option value="entry">Entry-Level</option>
                 <option value="junior">Junior</option>
                 <option value="senior">Senior</option>
-            </select><br>
-            <label for="recommend">Would you recommend Devslopes to a friend?</label><br>
-            <input name="recommend" id="definitely" type="radio">Definitely<br>
-            <input name="recommend" id="maybe" type="radio">Maybe<br>
-            <input name="recommend" id="notSure" type="radio">Not Sure<br>
-            <label for="feature">What is your favorite feature of Devslopes?</label><br>
-            <select name="feature" id="feature">
-                <option value="none"></option>
-                <option value="feature- ">Feature 1</option>
-                <option value="feature-2">Feature 2</option>
-                <option value=feature-3"">Feature 3</option>
-            </select><br>
-            <label for="improve">What would you like to see improved? </label><span class="smaller-text">(check all that apply)</span> <br>
-            <input type="checkbox">Front-end Projects<br>
-            <input type="checkbox"><br>
-            <input type="checkbox"><br>
-            <input type="checkbox"><br>
-            <input type="checkbox"><br>
-            <input type="checkbox"><br>
+            </select><br><br>
+            <div>
+                <label for="recommend">Would you recommend Devslopes to a friend?</label><br>
+                <input name="recommend" id="definitely" type="radio">Definitely<br>
+                <input name="recommend" id="maybe" type="radio">Maybe<br>
+                <input name="recommend" id="notSure" type="radio">Not Sure<br>
+            </div><br>
+            <div>   
+                <label for="feature">What is your favorite feature of Devslopes?</label><br>
+                <select class="fullLength"  name="feature" id="feature">
+                    <option value="none">Select a feature</option>
+                    <option value="feature- ">Feature 1</option>
+                    <option value="feature-2">Feature 2</option>
+                    <option value=feature-3"">Feature 3</option>
+                </select><br>
+            </div> <br>
+            <div>
+                <label for="improve">What would you like to see improved? </label><span class="smaller-text">(check all that apply)</span> <br>
+                <input name="improve" id="frontEnd" type="checkbox">Front-end Projects<br>
+                <input name="improve" id="backEnd" type="checkbox">Back-end Projects<br>
+                <input name="improve" id="challenges" type="checkbox">Challenges<br>
+                <input name="improve" id="videos" type="checkbox">Videos<br>
+                <input name="improve" id="onlineMeetups" type="checkbox">Online Meetups<br>
+                <input name="improve" id="community" type="checkbox">Community<br>
+            </div><br>
+            <label for="comments">Any comments or suggestions?</label><br>
+            <textarea class="fullLength"  name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            <input class="sub" type="submit">
         </div>
     </form>
 </body>
